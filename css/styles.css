@@ -4,19 +4,20 @@ body {
     font-weight: 200;
     height: 100%;
     margin: 0px;
-}
-
-header {
+    text-align: center;
 }
 
 #topBar {
-    background-color: #fff799;
+    background-color: pink;
+    padding-left: 20px;
     display: flex;
-    padding-left: 10px;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-#topMenu {
-    padding: 5px;
+nav {
+    padding: 12px;
+    margin-top: 10px;
 }
 
 .guide, .guide a {
@@ -24,8 +25,13 @@ header {
     padding-left: 10px;
     color: #000;
     text-decoration: none;
-    font-weight: 400;
-    text-transform: uppercase;
+    font-weight: 300;
+    text-transform: lowercase;
+    font-size: 15px;
+}
+
+a:hover {
+    color: white;
 }
 
 .hero {
@@ -36,7 +42,7 @@ header {
     background-attachment: fixed;
 
     width: 100vw;
-    height: 100vh;
+    height: 75vh;
 
     display: flex;
     justify-content: center;
@@ -54,10 +60,17 @@ h2 {
     font-weight: 300;
 }
 
+h3 {
+    font-weight: 500;
+    font-size: 30px;
+    text-transform: lowercase;
+}
+
 #name {
     font-weight: 800;
     text-transform: lowercase;
     font-size: 20px;
+    color: #0373a9;
 }
 
 #tagLine {
@@ -66,4 +79,93 @@ h2 {
     font-weight: 600px;
     color: #fff;
     letter-spacing: 3px;
+}
+
+
+#today {
+    background-color: #fff799; 
+    margin-top: -20px;
+    padding: 20px;
+    text-align:center;
+}
+
+
+.specialTitle {
+    margin: 0;
+	font-size: 60px;
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: lowercase;
+	display: inline;
+	color: pink;
+	white-space: nowrap;
+	transition: font-weight 250ms ease-out, font-stretch 250ms ease-out;
+	text-shadow: -1px -1px 0 purple, 1px -1px 0 purple, -1px 1px 0 purple,
+		1px 1px 0 purple, 1px 0px 0px #0373a9, 0px 1px 0px #0373a9, 2px 1px 0px #0373a9,
+		1px 2px 0px #0373a9, 3px 2px 0px #0373a9, 2px 3px 0px #0373a9, 4px 3px 0px #0373a9,
+		3px 4px 0px #0373a9, 5px 4px 0px #0373a9, 3px 5px 0px purple,
+		6px 5px 0px purple, -1px 2px 0 black, 0 3px 0 purple, 1px 4px 0 purple,
+		2px 5px 0px purple, 2px -1px 0 purple, 3px 0 0 purple, 4px 1px 0 purple,
+		5px 2px 0px purple, 6px 3px 0 purple, 7px 4px 0 purple;
+
+	
+	}
+
+.special {
+    font-weight: 500;
+    font-size: 40px;
+    text-transform: lowercase;
+	font-stretch: 1%;
+    transition: all 250ms ease-out;
+    display: inline;
+    margin: 30px;
+    color: #0373a9;
+	}
+
+#menu {
+    padding: 10px;
+    background-color: #fff799;
+}
+
+.menuContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pizza {
+    width: 200px;
+    background-color: #03a4fe;
+    padding: 20px;
+}
+
+
+.pizzaName {
+    font-weight: 300;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.description {
+    color: #fff;
+    font-size: 13px;
+}
+
+.price {
+   font-size: 18px;
+   font-weight: 300;
+   background-color: pink;
+   padding: 2px;
+}
+
+#subscribe {
+    background-color: pink;
+    padding: 10px;
+}
+
+#visit {
+    background-color: #03a4fe;
+    padding: 10px;
 }
